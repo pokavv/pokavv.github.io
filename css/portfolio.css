@@ -1,9 +1,14 @@
+body {
+    background: #b0c4de;
+    margin: 0;
+}
+
 /* Header */
 #header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #4acaa8;
+    background: #87CEFA;
     color: #d2f2e9;
     height: 100%;
     overflow-y: auto;
@@ -33,7 +38,7 @@
 }
 
 #header > nav ul li {
-    border-top: solid 2px #5ccfb1;
+    border-top: solid 2px #ADD8E6;
     display: block;
     padding: 0;
 }
@@ -58,20 +63,25 @@
 
 /* Wrapper */
 #wrapper {
-    background: #fafafa;
     padding-left: 23em;
 }
 
 section {
-    border-top: solid 6px #f4f4f4;
+    border-top: solid 6px #87CEFA;
 }
 
 section > .container {
-    padding: 6em 0 4em 0;
+    padding: 1em 0 2em 0;
 }
 
 section > .container:first-child {
     border-top: 0;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-size: 4em;
 }
 
 /* Footer */
@@ -101,6 +111,13 @@ section > .container:first-child {
     border-left: 0;
     margin-left: 0;
     padding-left: 0;
+}
+
+/* container */
+.container {
+    margin: 0 auto auto 5em ;
+    max-width: calc(100% - 4.5em);
+    width: 60em;
 }
 
 /* Profile-image */
@@ -139,7 +156,7 @@ section > .container:first-child {
 
 #wrapper a:hover {
     border-bottom-color: transparent;
-    color: #4acaa8;
+    color: #87CEFA;
 }
 
 /* image */
@@ -150,4 +167,45 @@ section > .container:first-child {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+}
+
+/* project */
+article {
+    border-top: solid 3px #87CEFA;
+    margin-bottom: 2.25em;
+    padding-top: 2.25em;
+    font-size: 100%;
+    display: block;
+    text-align: left;
+}
+
+article:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+article .image {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 2.25em 0;
+    padding: 0 2em 0 2em;
+}
+
+article .image img {
+    display: block;
+    width: 380px;
+    height: 285px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+article .inner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+article .inner > :last-child {
+    margin-bottom: 0;
 }
