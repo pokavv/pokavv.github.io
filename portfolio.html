@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>portfolio.html</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <section id="header">
+        <header>
+            <span class="profile_image"><img src="../static/images/profile.jpg" alt=""></span>
+            <h1 id="logo"><a href="#">MyName</a></h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#intro" class="intro">Intro</a></li>
+                <li><a href="#skill" class="skill">Skill</a></li>
+                <li><a href="#code" class="code">Code</a></li>
+                <li><a href="#project" class="project">Project</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div id="wrapper">
+        <div id="main">
+            <section id="intro">
+                <div class="container">
+                    <header class="major">
+                        <h2>Introduction</h2>
+                    </header>
+                    <p>
+                        content<br>
+                        content<br>
+                        content
+                    </p>
+                    <header class="major">
+                        <label for="career">Career
+                            <ul id="career">
+                                <li>
+                                    <h5>Content1</h5>
+                                    <p>2020.1.1 ~ 2020.1.2</p>
+                                </li>
+                                <li>
+                                    <h5>Content1</h5>
+                                    <p>2020.1.1 ~ 2020.1.2</p>
+                                </li>
+                                <li>
+                                    <h5>Content1</h5>
+                                    <p>2020.1.1 ~ 2020.1.2</p>
+                                </li>
+                            </ul>
+                        </label>
+                    </header>
+                </div>
+            </section>
+
+            <section id="skill">
+                <div class="container">
+                    <h2>Skill</h2>
+                    <label for="backend">Backend
+                        <ul id="backend">
+                            <li>JAVA 8, 11, 17</li>
+                            <li>Spring, SpringBoot</li>
+                            <li>MyBatis</li>
+                            <li>JPA</li>
+                        </ul>
+                    </label>
+                    <label for="database">Database
+                        <ul id="database">
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>H2 Database</li>
+                        </ul>
+                    </label>
+                    <label for="frontend">Frontend
+                        <ul id="frontend">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jquery, ajax</li>
+                        </ul>
+                    </label>
+                    <label for="other">Other
+                        <ul id="other">
+                            <li>Python</li>
+                            <li>Git, Github</li>
+                            <li>Intellij</li>
+                            <li>VSCode</li>
+                        </ul>
+                    </label>
+                </div>
+            </section>
+
+            <section id="code">
+                <div class="container">
+                    <h2>Code</h2>
+                    <p>What I aim for code?</p>
+                    <ul id="code_list">
+                        <li>
+                            <p class="code_description">
+                                code description1
+                            </p>
+                            <code>
+                                public class exClass1 {
+                                    public void exMethod1(param) {
+                                        ---
+                                    }
+                                }
+                            </code>
+                        </li>
+                        <li>
+                            <p class="code_description">
+                                code description2
+                            </p>
+                            <code>
+                                public class exClass2 {
+                                public void exMethod2(param) {
+                                    ---
+                                    }
+                                }
+                            </code>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="project">
+                <div class="container">
+                    <h2>Project</h2>
+                    <div class="project_detail">
+                        <article>
+                            <a href="https://github.com/pokavv/mybatis-board" class="image">
+                                <img src="../static/images/mybatis-board.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <a href="https://github.com/pokavv/mybatist-board">
+                                    <h4>SpringBoot Mybatis 게시판</h4>
+                                    <p>
+                                        개발 기간 3일내에 SpringBoot 와 Mybatis 를 이용해 간단한 회원가입 및 로그인, 게시글 CRUD 를 구현한 웹 프로젝트입니다.<br>
+                                        PostgreSQL 과 연동해서 실시간으로 회원 및 게시글이 관리되도록 구현하였습니다.
+                                    </p>
+                                </a>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="https://github.com/pokavv/boardchat" class="image">
+                                <img src="../static/images/boardchat.jpg" alt="">
+                            </a>
+                            <div class="inner">
+                                <a href="https://github.com/pokavv/boardchat">
+                                    <h4>SpringBoot Mybatis 게시판</h4>
+                                    <p>
+                                        개발 기간 3일내에 SpringBoot 와 Mybatis 를 이용해 간단한 회원가입 및 로그인, 게시글 CRUD 를 구현한 웹 프로젝트입니다.<br>
+                                        PostgreSQL 과 연동해서 실시간으로 회원 및 게시글이 관리되도록 구현하였습니다.
+                                    </p>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" text-align="center">
+                <div class="container">
+                    <h2>ContactMe</h2>
+                    <ul class="icons">
+                        <li>Email : pokavv1@gmail.com</li>
+                        <li>Github : <a href="https://github.com/pokavv/">https://github.com/pokavv</a></li>
+                        <li>Blog : <a href="https://coding-gotgan.tistory.com/">https://coding-gotgan.tistory.com</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>&copy; Untitled. All rights reserved.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
