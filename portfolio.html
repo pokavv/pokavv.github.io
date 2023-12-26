@@ -6,52 +6,50 @@
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-    <section id="header">
-        <header>
-            <span class="profile_image"><img src="images/profile.jpg" alt=""></span>
-            <h1 id="logo"><a href="#">MyName</a></h1>
+    <section>
+        <header id="header">
+            <div id="profile">
+                <span class="profile-image"><img src="images/profile.jpg" alt=""></span>
+                <h2 id="name">MyName</h2>
+            </div>
+            <nav id="nav">
+                <ul class="main-menu">
+                    <li><a href="#intro" class="intro">Intro</a></li>
+                    <li><a href="#skill" class="skill">Skill</a></li>
+                    <li><a href="#code" class="code">Code</a></li>
+                    <li><a href="#project" class="project">Project</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="#intro" class="intro">Intro</a></li>
-                <li><a href="#skill" class="skill">Skill</a></li>
-                <li><a href="#code" class="code">Code</a></li>
-                <li><a href="#project" class="project">Project</a></li>
-                <li><a href="#contact" class="contact">Contact</a></li>
-            </ul>
-        </nav>
     </section>
 
     <div id="wrapper">
         <div id="main">
             <section id="intro">
                 <div class="container">
-                    <header class="major">
-                        <h2>Introduction</h2>
-                    </header>
+                    <h2>Introduction</h2>
                     <p>
                         content<br>
                         content<br>
                         content
                     </p>
-                    <header class="major">
-                        <label for="career">Career
-                            <ul id="career">
-                                <li>
-                                    <h5>Content1</h5>
-                                    <p>2020.1.1 ~ 2020.1.2</p>
-                                </li>
-                                <li>
-                                    <h5>Content1</h5>
-                                    <p>2020.1.1 ~ 2020.1.2</p>
-                                </li>
-                                <li>
-                                    <h5>Content1</h5>
-                                    <p>2020.1.1 ~ 2020.1.2</p>
-                                </li>
-                            </ul>
-                        </label>
-                    </header>
+                    <label for="career">Career
+                        <ul id="career">
+                            <li>
+                                <h5>Content1</h5>
+                                <p>2020.1.1 ~ 2020.1.2</p>
+                            </li>
+                            <li>
+                                <h5>Content1</h5>
+                                <p>2020.1.1 ~ 2020.1.2</p>
+                            </li>
+                            <li>
+                                <h5>Content1</h5>
+                                <p>2020.1.1 ~ 2020.1.2</p>
+                            </li>
+                        </ul>
+                    </label>
                 </div>
             </section>
 
@@ -133,7 +131,7 @@
                                 <img src="images/mybatis-board.jpg" alt="">
                             </a>
                             <div class="inner">
-                                <a href="https://github.com/pokavv/mybatist-board">
+                                <a href="https://github.com/pokavv/mybatis-board">
                                     <h4>SpringBoot Mybatis 게시판</h4>
                                     <p>
                                         개발 기간 3일내에 SpringBoot 와 Mybatis 를 이용해 간단한 회원가입 및 로그인, 게시글 CRUD 를 구현한 웹 프로젝트입니다.<br>
@@ -148,10 +146,11 @@
                             </a>
                             <div class="inner">
                                 <a href="https://github.com/pokavv/boardchat">
-                                    <h4>SpringBoot Mybatis 게시판</h4>
+                                    <h4>SpringBoot 게시판&채팅기능 구현</h4>
                                     <p>
-                                        개발 기간 3일내에 SpringBoot 와 Mybatis 를 이용해 간단한 회원가입 및 로그인, 게시글 CRUD 를 구현한 웹 프로젝트입니다.<br>
-                                        PostgreSQL 과 연동해서 실시간으로 회원 및 게시글이 관리되도록 구현하였습니다.
+                                        SpringBoot 프레임워크로 로그인 후 게시판과 채팅 기능을 이용할 수 있는 간단한 프로젝트를 구현하였습니다.
+                                        PostgreSQL DB와 연동 후, MyBatis로 매핑하여 데이터를 주고받으며, 회원가입 및 로그인, 게시글 기능을 구현하고,
+                                        ajax와 jquery를 이용한 브라우저와의 비동기 통신을 통해 실시간 채팅기능을 구현했습니다.
                                     </p>
                                 </a>
                             </div>
