@@ -4,10 +4,10 @@
     <meta charset="utf-8"/>
     <title>박준규의 포트폴리오</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
-    <script src="https://use.fontawesome.com/releases/v5.13.0/is/all.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/caa87a78d2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <style>
@@ -30,15 +30,10 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificate">Certificate</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">Project</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interest">Interest</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
-    <div id="sidebox">
-        <a href="#about">📃TOP</a><br>
-    </div>
 
     <div class="container-fluid p-0">
         
@@ -60,8 +55,8 @@
                 </p>
                 
                 <div class="social-icons">
-                    <a style="width: 44px; height: 44px;" class="social-icon" href="https://coding-gotgan.tistory.com/" target="_blank"><i class="fas fa-blog"></i></a>
-                    <a style="width: 44px; height: 44px;" class="social-icon" href="https://github.com/pokavv/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a style="width: 44px; height: 44px;" class="social-icon" href="https://coding-gotgan.tistory.com/" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                    <a style="width: 44px; height: 44px;" class="social-icon" href="https://github.com/pokavv/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
         </section>
@@ -113,10 +108,11 @@
         <hr class="m-0">
 
         <!-- Skills -->
+        <br>
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
-                <h2 class="mb-5 font-titWeb">Skills</h2>
-                <div class="subheading mb-3 font-titWeb">Language</div>
+                <h2 class="mb-5 font-noto">Skills</h2>
+                <div class="subheading mb-3 font-noto">Language</div>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -237,10 +233,12 @@
                 </ul>
             </div>
         </section>
+        <br>
 
         <hr class="m-0">
 
         <!-- Project -->
+        <br>
         <section class="resume-section" id="project">
             <div class="resume-section-content">
                 <h2 class="mb-5 font-titWeb">Project</h2>
@@ -248,26 +246,178 @@
                     <div class="flex-grow-1">
                         <div class="subheading mb-3">
                             &nbsp; &nbsp;&nbsp;
-                            <span class="font-titWeb text-pupple">Mybatis-Board</span> - <span class="font-noto text-pupple">3일챌린지 Mybatis 게시판</span><br>
-                            <button style="background-color: #9423cf; color: white; border: 1px solid #9423cf; margin-top: 40px;" class="btn btn-primary" type="button" id="open" onclick="onDisplay();">동영상</button>
-                            <button style="background-color: #9423cf; color: white; border: 1px solid #9423cf; margin-top: 40px; display: none;" class="btn btn-primary" id="close" onclick="offDisplay();">닫기</button>
+                            <span class="font-titWeb text-pupple"><b>Mybatis-Board</b></span> - <span class="font-noto text-pupple">3일챌린지 Mybatis 게시판</span><br>
+                        </div><br>
+                        <div class="flex-shrink-0">
+                            <span class="text-pupple font-titWeb">29 November 2023 ~ 1 December 2023</span>
                         </div>
-                        <p class="content" id="video" style="display: none;">
-                            <video controls poster="images/title.png" style="width: 100%; height: 100%; margin-top: 40px; margin-right: 40px;">
-                                <source src="videos/mybatis-board.mp4" type="video/mp4">
-                            </video>
+                        <div>
+                            <img src="images/mybatis-board.png" style="width: 600px; height: 600px; margin-top: 20px;">
+                        </div>
+                        <br>
+                        <p>
+                            독학한 MyBatis를 더 잘 이해하고 프로젝트에 사용하기 위해 MyBatis를 사용하는 게시판 서비스를 3일이라는<br>
+                            기한내에 완성하기로 기획하였습니다. 해당 프로젝트는 <b>'회원관리'</b>와 <b>'게시판'</b> 두가지 기능을 구현한 간단한 게시판 서비스입니다.<br>
+                            <b>'Controller-Service-Repository-Domain'</b> 구조에 충실해서 각 계층 구조를 최대한 독립적으로 설계하였습니다.<br>
+                            Servlet Filter 인터페이스로 LogFilter / LoginCheckFilter 를 작성하고 스프링에서 제공하는 <br><b>FilterRegistrationBean</b>으로 필터를 프로젝트에 등록해서 HTTP 요청에 따라 로그 필터와 로그인 체크 필터가 동작하도록 구현했습니다.
                         </p>
+                    </div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Java 17
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Springboot 3.1.6
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mybatis 3.0.1
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            H2 database 2.2.224
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Thymeleaf
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            html / css
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-3">
+                            &nbsp; &nbsp;&nbsp;
+                            <span class="font-titWeb text-pupple"><b>Boardchat</b></span> - <span class="font-noto text-pupple">게시판 & 채팅 구현</span><br>
+                        </div><br>
+                        <div class="flex-shrink-0">
+                            <span class="text-pupple font-titWeb">6 December 2023 ~ 24 December 2023</span>
+                        </div>
+                        <div>
+                            <img src="images/boardchat.png" style="width: 600px; height: 600px; margin-top: 20px;">
+                        </div>
+                        <br>
+                        <p>
+                            실제 커뮤니티 사이트에 있는 <b>댓글 기능과 실시간 채팅 기능</b>을 구현해보고 싶어서 WebSocket과 jQuery에 대한 내용을 찾아보았고, <br>
+                            Ajax로 각 게시글마다 댓글을 달 수 있는 댓글 기능과 WebSocket을 통해 실시간 채팅 기능을 구현한 게시판 서비스를 만들었습니다.<br>
+                            해당 프로젝트를 처음 설계할때는 큰 어려움이 없었지만, jQuery를 이용해 댓글과 파일 업로드/다운로드 기능을<br> 구현하고자 할 때 컨트롤러에서 데이터를 제대로 받지 못하거나 댓글 목록이나 파일 업로드 시에 ajax 비동기 처리가<br> 제대로 안되는 등의 예상치 못한 오류들을 많이 맞닥뜨렸습니다. 발생한 오류들을 해결하는 과정에서 해당 오류들 중 거의 대다수가 <br>jquery와 ajax의 사용법, HTTP 통신의 개념을 좀더 면밀하게 학습했다면 발생하지 않았을 오류라는 것을 깨닫게 되었고,<br> 제대로 관련 개념이나 사용법 등을 숙지하고 있었다면 생산성을 높일 수 있었겠다는 아쉬움을 가졌습니다. <br>하지만 해당 프로젝트를 진행하면서 RestAPI는 물론 jQuery, ajax, WebScoket에 대해 배우고 이해하는데 큰 도움이 되었고, <br>프로젝트를 설계할 때 관련된 개념에 대해 충분히 이해하고 사용하는건지 고찰하는 자세를 가지게 되었습니다.
+                            
+                        </p><br><br>
+                    </div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Java 17
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Springboot 3.2.0
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mybatis 3.0.3
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            PostgreSQL 16.0
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            WebSocket
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            jquery / ajax
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Thymeleaf
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            html / css
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-3">
+                            &nbsp; &nbsp;&nbsp;
+                            <span class="font-titWeb text-pupple"><b>Coding-PMS</b></span> - <span class="font-noto text-pupple">간단한 그룹 프로젝트 관리 시스템 구현</span><br>
+                        </div><br>
+                        <div class="flex-shrink-0">
+                            <span class="text-pupple font-titWeb">31 December 2023 ~ 23 January 2024</span>
+                        </div>
+                        <div>
+                            <img src="images/coding-pms.png" style="width: 700px; height: 700px; margin-top: 20px;">
+                        </div>
                         <br>
                         <p>
                             독학한 MyBatis를 더 잘 이해하고 프로젝트에 사용하기 위해 MyBatis를 사용하는 게시판 서비스를 3일이라는 기한내에 완성하기로 기획하였습니다.<br>
                             <b>'회원관리'</b>와 <b>'게시판'</b> 두가지 기능을 구현한 간단한 게시판 서비스입니다.<br>
                             <b>'Controller-Service-Repository-Domain'</b> 구조에 충실해서 각 계층 구조를 최대한 독립적으로 설계하였습니다.<br>
                             Servlet Filter 인터페이스로 LogFilter / LoginCheckFilter 를 작성하고 스프링에서 제공하는 <b>FilterRegistrationBean</b>으로 필터를 프로젝트에<br> 등록해서 HTTP 요청에 따라 로그 필터와 로그인 체크 필터가 동작하도록 구현했습니다.
-                        </p>
+                        </p><br><br>
                     </div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Java 17
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Springboot 3.1.6
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mybatis 3.0.3
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            AWS RDS (PostgreSQL 15.4) (배포용)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            H2 Database 2.2.224 (개발용)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            AWS EC2
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            JSP 3.0.1
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            jquery / ajax
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            html / css
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </section>
+        <hr class="m-0">
 
-                
+        <!-- Contact -->
+        <section class="resume-section" id="contact">
+            <div class="resume-section-content">
+                <h2 class="mb-1 font-titWeb">Contact Me</h2>
+                <h4 class="mb-5">
+                    <a class="text-pupple font-titWeb" href="https://github.com/pokavv">Github <i class="fa-brands fa-square-github"></i><br>
+                    <a class="text-pupple font-titWeb" href="https://coding-gotgan.tistory.com/">Blog <i class="fa-solid fa-blog"></i><br>
+                    <a class="text-pupple font-titWeb" href="mailto:pokavv1@gmail.com">Mail : pokavv1@gmail.com</a>
+                </h4>
             </div>
         </section>
     </div>
